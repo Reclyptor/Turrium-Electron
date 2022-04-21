@@ -1,4 +1,4 @@
-import { Album } from '../../types/Album';
+import { Album } from '../../../types/Album';
 import { Action } from './index';
 
 export const SET_ALBUMS = 'SET_ALBUMS';

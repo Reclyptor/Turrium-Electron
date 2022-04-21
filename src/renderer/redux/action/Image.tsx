@@ -1,4 +1,4 @@
-import { Image } from '../../types/Image';
+import { Image } from '../../../types/Image';
 import { Action } from './index';
 
 export const SET_IMAGES = 'SET_IMAGES';

@@ -1,4 +1,4 @@
-import { Image } from '../../types/Image';
+import { Image } from '../../../types/Image';
 import { Action } from '../action';
 import { SET_IMAGES } from '../action/Image';
 

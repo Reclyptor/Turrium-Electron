@@ -1,8 +1,8 @@
 import { ipcRenderer } from 'electron';
-import { OPEN_DIRECTORY_DIALOG } from './channels';
+import { SELECT_DIRECTORY } from './channels';
 
 const openDirectoryDialog = (): Promise<string> => {
-  return ipcRenderer.invoke(OPEN_DIRECTORY_DIALOG);
+  return ipcRenderer.invoke(SELECT_DIRECTORY);
 };
 
 export default {

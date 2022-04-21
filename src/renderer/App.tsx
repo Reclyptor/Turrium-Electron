@@ -1,5 +1,5 @@
 import { MemoryRouter as Router, Routes, Route } from 'react-router-dom';
-import Main from './component/nodes/Main';
+import Main from './component/views/Main';
 import './App.css';
 
 const App = () => {

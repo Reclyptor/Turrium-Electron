@@ -1,4 +1,4 @@
-import { Album } from '../../types/Album';
+import { Album } from '../../../types/Album';
 import { Action } from '../action';
 import { SET_ALBUMS } from '../action/Album';
 
