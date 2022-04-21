@@ -7,7 +7,8 @@ import Navbar from '../common/Navbar';
 const Main = () => {
   const handleFolderOpen = (): void => {
     window.electron
-      .openDirectoryDialog()
+      .selectDirectory()
+      .then(window.electron.listDirectory)
       .then(console.log)
       .catch(() => {});
   };

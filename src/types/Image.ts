@@ -1,7 +1,7 @@
-export interface Image {
-  height: number;
+export interface Image extends File {
   width: number;
-  path: string;
+  height: number;
+  type: string;
   sha1: string;
-  filename: string;
+  b64: string;
 }
