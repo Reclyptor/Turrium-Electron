@@ -1,25 +1,19 @@
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 // @ts-ignore
+import * as ReactDOMClient from 'react-dom/client';
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import App from './App';
 import configureStore from './redux/store';
 
 const store = configureStore();
+const container = document.getElementById('root');
+const root = ReactDOMClient.createRoot(container);
 
-ReactDOM.render(
+root.render(
   <React.StrictMode>
     <Provider store={store}>
       <App />
     </Provider>
-  </React.StrictMode>,
-  document.getElementById('root')
+  </React.StrictMode>
 );
-
-// calling IPC exposed from preload script
-window.electron.ipcRenderer.once('ipc-example', (arg) => {
-  // eslint-disable-next-line no-console
-  console.log(arg);
-});
-window.electron.ipcRenderer.myPing();
